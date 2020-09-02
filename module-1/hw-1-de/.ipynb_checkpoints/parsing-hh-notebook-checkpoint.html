@@ -13172,7 +13172,7 @@ div#notebook {
 <span class="k">for</span> <span class="n">vac</span> <span class="ow">in</span> <span class="n">vacs</span><span class="p">:</span>
     <span class="n">det_vac</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">vac</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">det_vac</span><span class="p">)</span> <span class="o">%</span> <span class="mi">50</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">det_vac</span><span class="p">)</span><span class="si">}</span><span class="s1"> of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">vacs</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{len(det_vac)} of {len(vacs)}&#39;</span><span class="p">)</span>
 
 <span class="n">vac_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">det_vac</span><span class="p">)[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;alternate_url&#39;</span><span class="p">,</span> <span class="s1">&#39;description&#39;</span><span class="p">,</span> <span class="s1">&#39;employer&#39;</span><span class="p">,</span> <span class="s1">&#39;employment&#39;</span><span class="p">,</span> <span class="s1">&#39;experience&#39;</span><span class="p">,</span> <span class="s1">&#39;key_skills&#39;</span><span class="p">,</span> <span class="s1">&#39;salary&#39;</span><span class="p">,</span> <span class="s1">&#39;schedule&#39;</span><span class="p">,</span> <span class="s1">&#39;specializations&#39;</span><span class="p">]]</span>
 </pre></div>
@@ -13631,7 +13631,7 @@ Git: 43
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
